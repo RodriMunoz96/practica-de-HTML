@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    color:red;
+}
+h3 {
+    color:darkgreen;
+}
+body {
+    font-family: sans-serif;
+}
+img,video {
+    max-width: 30%;
+    height: auto;
+}
+

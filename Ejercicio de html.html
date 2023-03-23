@@ -1,0 +1,421 @@
+<!DOCTYPE html> <!--esto sirve para que este documento/página se considere que fue creada con HTML versión 5, asegurando que todas las etiquetas sean leídas-->
+<!--lo que está en celeste es un "atributo", y lo que está en rojo es el "valor" que tiene dicho atributo-->
+<html lang="en"> <!--"lang" es para determinar el lenguaje en el que se considera que el código está escrito (lo ideal es usar siempre "en")-->
+<head>
+    <meta charset="UTF-8"> 
+    <!--este atributo junto con utf8 sirve para que exploradores viejos reconozcan caracteres como la letra "ñ" -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--esto sirve también para "copiar" la configuración de Internet Explorer a la de Microsoft Edge, pero nadie usa I.E así que se puede borrar sin problemas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--"viewport" es la etiqueta que establece de qué forma tu contenido se va a adaptar visualmente 
+        a la página web. El atributo de "content" establece las caracteríticas de cómo se presenta la página.-->
+    <title>HTML practice</title>
+    <meta name="description" content="se aprenden los fundamentos de HTML con el Mircha" />
+    <!--El título no debería superar los 60 caracteres para favorecer su posicionamiento al buscarla en un navegador web, 
+    y la meta de abajo simplemente es la descripción que se da justo después del título que indica qué se puede encontrar 
+    en la página, y lo ideal es que no supere los 165 caracteres.-->
+    <link rel="stylesheet" href="assets/estilos.css">
+    <link rel="icon" href="imágenes/panda-rojo.png">
+    <link rel="apple-touch-icon" href="imágenes/panda-rojo.png">
+</head>
+<body>
+    <p>Algunas páginas inician con un pequeño texto de encabezado para dar información sobre lo que contiene</p>
+  <h1 id="inicio">Esta es la página web para practicar el curso de John Mircha de Youtube</h1>
+        <p>Esto es un texto random, así que dejá de leerme...bobo</p>
+    <h2>Temas del curso</h2>
+    <ul> <!--ul>li*13>a-->
+      <li><a href="index.html#etiquetas">Etiquetas de texto básicas</a></li>
+      <li><a href="index.html#etiquetas-semanticas">Etiquetas semánticas</a></li>
+      <li><a href="index.html#etiquetas-de-salto">Etiquetas de salto</a></li>
+      <li><a href="index.html#e.formateo">Etiqutas de formateo</a></li>
+      <li><a href="index.html#e.semanticas-estructurales">Etiquetas semánticas estructurales</a></li>
+      <li><a href="index.html#e.de-bloque-vs-e.-de-linea">Etiquetas de bloque vs Etiquetas de línea</a></li>
+      <li><a href="index.html#imagenes">Imágenes</a></li>
+      <li><a href="index.html#figuras">Figuras</a></li>
+      <li><a href="index.html#listas-ordenadas">Listas ordenadas</a></li>
+      <li><a href="index.html#listas-desordenadas">Listas desordenadas</a></li>
+      <li><a href="index.html#listas-de-definicion">Listas de definicion</a></li>
+      <li><a href="index.html#tablas">Tablas</a></li>
+      <li><a href="index.html#enlaces">Enlaces</a></li>
+      <li><a href="index.html#enlaces-internos">Enlaces Internos</a></li>
+      <li><a href="index.html#elementos-interactivos">Elementos interactivos</a></li>
+      <li><a href="index.html#audio-y-video">Audio y Video</a></li>
+      <li><a href="index.html#elementos-de-formularios">Elementos de formularios</a></li>
+      <li><a href="index.html#formularios">Formularios</a></li>
+    </ul>
+   <hr>
+   <h3 id="etiquetas-basicas">Etiquetas de texto básicas</h3>
+        <p><b>esto es texto en negrita</b>, <i>esto es texto en italicas</i>, <u>esto... bueno, lo estás viendo ah</u>
+        4<sup>2</sup>=16, la fórmula de la glucosa es C<sub>6</sub>O<sub>6</sub>H<sub>12</sub>, <mark>esto es para resaltar</mark>
+        <small>esto pone letras pequeñas</small>
+        </p>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="etiquetas-semanticas">Etiquetas semánticas</h3> <!--ayudan a resaltar una parte del texto considerada importante, un texto con semántica
+    afecta cómo los motores de búsqueda interpretan esa información-->
+        <p><blockquote>La vida es aquello que pasa mientras estás ocupado con otras cosas</blockquote><cite>John Lennon</cite></p>
+        <!--deja sangría, sirve para hacer una cita - describe la cita--> 
+        <p><em>Esto hace énfasis en el texto y lo pone en italica</em>
+        <br><strong>esto también lo pone en negrita PEEERO se usa para darle más importancia al texto y el navegador lo interprete como más importante</strong></p>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="etiquetas-de-salto">Etiquetas de salto</h3>
+      <p>
+        <h4>Receta para hacer waffles salados</h4>con instrucciones y los ingredientes pensados por el usuario.
+        <h4>Receta para waffles dulces</h4>
+        aún se debe anotar la receta<br> 
+        ingredientes pueden variar según el gusto del cocinero.
+        </p>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="e.formateo">Etiqutas de formateo</h3>
+       <p><pre> 
+       -Funciones de HTML:
+        .Armar el esqueleto de la página web
+        .Incluye toda la información que va a mostrar la página
+       -Funciones de CSS:
+        .Le da un formato que deja más prolija y ordenada la información en la página
+        .Agrega un estilo que permite hacer la página más llamativa para el usuario (colores, imágenes ajustables al texto, otros)
+       Todo este texto está dentro de la etiqueta "pre", sin usar la etiqueta "br"
+       </pre></p>
+      <p><code>Esto está en formato código</code>, se usa por ejemplo para cuando queres indicar que el texto activa una función al ser introducido por el usuario</p>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="e.semanticas-estructurales">Etiquetas semánticas estructurales</h3>
+    <header>Esta es la cabecera de un sitio web</header>
+     <main>
+     Esta es la sección principal de un documento
+     </main>
+    <footer>Este es el pie de la página</footer> <!--header, main y footer solo pueden usarse 1 vez por documento o artículo-->
+    <nav>Grupo de enlaces de navegación</nav>
+    <article>Esta es una sección que incluye la explicación de su propio contenido</article>
+    <aside>Esto es contenido secundario, ejemplo: una lista de artículos relacionados al propio, o publicidades</aside>
+    <section>Esta es una sección con contenido más genérico o general, ejemplo: comentarios y opiniones de la gente sobre un artículo</section>
+    <!--Las etiquetas semánticas que pueden repetirse no tienen un orden, eso depende del programador-->
+    <address>Esta es una dirección, como la de mi casa o la de algun edificio</address>
+    <!--En la sección de cursos de la página de Mircha, los cursos de frontend sirven para poner en práctica todo lo aprendido-->
+    <a href="index.html#inicio">Volver</a>
+    <hr>
+   <h3 id="e.de-bloque-vs-e.-de-linea">Etiquetas de bloque vs Etiquetas de línea</h3>
+   <div>div es la etiqueta de bloque más representativa</div><span>y esta es la etiqueta de línea span, no tiene semántica</span>
+     <!--Las etiquetas de bloque ocupan toda la línea y generan un salto de línea, mientras que las de línea solo ocupan el espacio
+    que les fue asignado-->
+    <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="imagenes">Imágenes</h3>
+    <img src="imágenes/colibrí-verde-volando.jpg" alt="Colibrí verde volando">
+    <img src="imágenes/erizo-en-la-casa.jpg" alt="erizo sobre una cama">
+    <img src="imágenes/mini-michi-al-sol-majestuoso.jpg" alt="Gatito tomando sol">
+    <!--Hay imágenes con formato SVG, las cuales son creadas con programas como Ilustrator. Estan formadas
+     por un código muy extenso y repetitivo, por lo que es mejor tratarlas como imágenes y no como un código-->
+    <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="figuras">Figuras</h3> <!--es una imagen con semántica-->
+    <figure>
+      <img src="imágenes/colibrí-verde-volando.jpg">
+    </figure>
+    <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="listas-ordenadas">Listas Ordenadas</h3>
+    <h4>Géneros de series/películas</h4>
+    <ol>
+      <li>Terror</li>
+      <li>Comedia</li>
+      <li>Drama</li>
+      <li>Acción</li>
+      <li>Animé</li>
+      <li>Documentales</li>
+    </ol>
+    <ol start="3" reversed type="I">
+      <li>Terror</li>
+      <li>Comedia</li>
+      <li>Drama</li>
+      <li>Acción</li>
+      <li>Animé</li>
+      <li>Documentales</li>
+    </ol>
+    <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="listas-desordenadas">Listas desordenadas</h3>
+    <h4>Series o pelis para ver otra vez</h4>
+    <ul>
+      <li>Señales</li>
+      <li>Shrek</li>
+      <li>Naruto (aunque ni a palo porque muy larga xD)</li>
+      <li>One Punch Man</li>
+      <li>"How a Realistic Hero Rebuilt the Kingdom"</li>
+    </ul>
+    <ul type="circle">
+      <li>Señales</li>
+      <li>Shrek</li>
+      <li>Naruto (aunque ni a palo porque muy larga xD)</li>
+      <li>One Punch Man</li>
+      <li>"How a Realistic Hero Rebuilt the Kingdom"</li>
+    </ul>
+    <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="listas-de-definicion">Listas de definición</h3><!--Ideal para hacer un glosario de términos o definiciones-->
+    <dl>
+      <dt>Animé</dt>
+        <dd>Es un género visual de películas y series animadas originadas en Japón.</dd>
+      <dt>Odachi</dt>
+        <dd>Espada de gran tamaño usada durante la Edad Media/Moderna (creo) por varios samurai hasta
+        que fueran remplazadas por otras más pequeñas y mas rápidas de desenvainar y manejar en combate.</dd>
+    </dl> 
+    <a href="index.html#inicio">Volver</a> 
+    <hr>
+    <h3 id="tablas">Tablas (uso personajes del comic "Oh My Ghost!")</h3>  
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>Tipo de personaje/entidad</td>
+        <td>Habilidad</td>
+      </tr>
+      <tr>
+        <td>Loi</td>
+        <td>Humano/Esper</td>
+        <td>Invoca una mano azul espiritual (su función no se conoce aún)</td>
+      </tr>
+      <tr>
+        <td>Maya</td>
+        <td>Fantasma?</td>
+        <td>Pone a dormir a un objetivo o puede entrar en sus sueños y alterarlos como elija</td>
+      </tr>
+      <tr>
+        <td>Roita</td>
+        <td>Fantasma</td>
+        <td>Se desplaza y deja una ilusión de sí misma en su lugar</td>
+      <tr>
+        <td>Kenta</td>
+        <td>Humano</td>
+        <td>Aún no tiene, veterano en Judo</td>
+      </tr>
+      <tr>
+        <td>Jaja</td>
+        <td>Humana</td>
+        <td>Aún no tiene, es muy fuerte y sabe Judo</td>
+      </tr> 
+    </table>
+    <br>
+    <table>
+      <thead> <!--En la sección thead, el texto aparecerá en negrita-->
+        <tr>
+          <th colspan="3">Personajes de Oh My Ghost</th>
+        </tr>
+        <tr>
+          <th>Nombre</th>
+          <th>Tipo de personaje/entidad</th>
+          <th>Habilidades (normales o espirituales)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Loi</td>
+          <td>Humano/Esper</td>
+          <td>Invoca una mano azul espiritual (su función no se conoce aún)</td>
+        </tr>
+        <tr>
+          <td>Maya</td>
+          <td>Fantasma?</td>
+          <td>Pone a dormir a un objetivo o puede entrar en sus sueños y alterarlos como elija</td>
+        </tr>
+        <tr>
+          <td>Roita</td>
+          <td>Fantasma</td>
+          <td>Se desplaza y deja una ilusión de sí misma en su lugar</td>
+        <tr>
+          <td>Bridgette</td>
+          <td rowspan="3">Humana</td>
+          <td>No tiene habilidades, pero tiene muchos recursos como parte de la mafia</td>
+        </tr>
+        <tr>
+          <td>Jaja</td>
+          <td>Aún no tiene, es muy fuerte y sabe Judo</td>
+        </tr>
+        <tr>
+          <td>Juliette</td>
+          <td>No tiene ninguna habilidad física o espiritual</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3"><small>Por el rumbo que sigue la historia, se cree que todos los humanos serán espers eventualmente</small></th>
+        </tr>
+      </tfoot>
+    </table>
+    <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="enlaces">Enlaces</h3>
+      <a href="peliculas.html">Hacia la página de peliculas</a>
+      <br>
+      <p>Ir a la página del profe Jon Mircha
+        <a href="https://jonmircha.com" target="_blank" rel="nofollow">
+          <img src="imágenes/mini-michi-al-sol-majestuoso.jpg" alt="Ir a la página" width="35">
+        </a>
+      <!--usar el target cuando se quiere ir a una página que pertenece a otro dominio o un contenido diferente-->
+      <!--el nofollow hace que los motores de búsqueda interpreten que ese enlace no tiene relación con tu sitio web-->
+      </p>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="enlaces-internos">Enlaces Internos</h3>
+      <p>Los enlaces internos son los que permiten ir a otra parte de la página, como el "volver" al final
+        de cada sección.
+      </p>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="enlaces-y-protocolos">Enlaces y Protocolos</h3>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="elementos-interactivos">Elementos interactivos</h3>
+      <button onclick="alert('Presionaste el boton')">botón con el que se puede interactuar</button>
+      <details open>
+        <summary>Comics de ciencia ficcion</summary>
+        <article>
+          <p>Este es un listado de varios comics donde predomina este género, aunque también incluye
+          otros géneros dentro de cada uno</p>
+          <ul>
+            <li>Oh my Ghost!</li>
+            <li>UnOrdinary</li>
+            <li>Tower of God</li>
+          </ul>
+          <img src="imágenes/erizo-en-la-casa.jpg" width="12%" height="auto">
+        </article>
+      </details>
+      <details>
+        <summary>Comics de comedia</summary>
+        <article>
+          <p>Este es un listado de varios comics donde predomina este género, aunque también incluye
+          otros géneros dentro de cada uno</p>
+          <ul>
+            <li>Not so Shoujo Love Story</li>
+            <li>Let's Play</li>
+            <li>Adventures of God</li>
+            <li>Bluechair</li>
+          </ul>
+          <img src="imágenes/colibrí-verde-volando.jpg" width="20%" height="auto">
+        </article>
+      </details>
+      <br><a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="audio-y-video">Audio y Video</h3>
+      <audio src="multimedia/Musica epica relajante.mp3" controls preload></audio><!--El autoplay no funciona 
+      en dispositivos móviles y ciertos navegadores-->
+      <br>
+      <video src="multimedia/Naturaleza 1.mp4" controls preload></video>
+      <br>
+      <video src="multimedia/Naturaleza 2.mp4" controls preload poster="imágenes/mini-michi-al-sol-majestuoso.jpg"></video>
+    <hr>
+    <h3 id="elementos-de-formularios">Elementos de formularios</h3>
+        <input type="text"><br>
+        <input type="checkbox"><br>
+        <input type="radio"><br>
+        <input type="date"><br>
+        <input type="color"><br>
+        <input type="button" value="Botón"><br>
+        <input type="submit"><br>
+        <input type="reset"><br>
+        <input type="file"><br>
+        <input type="file" multiple><br>
+        <input type="hidden" name="idioma" value="es"><br>
+        <input type="email"><br>
+        <input type="number"><br>
+        <input type="tel"><br>
+        <input type="password"><br>
+        <input type="search"><br>
+        <textarea cols="20" rows="6"></textarea>
+        <br>
+        <select name="Elige un genero de serie" id="">
+          <option value="">Acción</option>
+          <option value="">Comedia</option>
+          <option value="">Romance</option>
+          <option value="">Sci-fi</option>
+          <option value="">Terror</option>
+          <option value="">Thriller</option>
+        </select>
+        <br>
+        <input type="text" value="esto no se modifica" disabled readonly><br>
+        <input type="text" placeholder="ej:lo que se te ocurra">
+      <br><a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="formularios">Formularios</h3>
+      <form action="peliculas.html"><!--el autocomplete también se puede aplicar al formulario, ahorra hacerlo a cada input-->
+        <label for="usuario">Usuario: </label><!--con el label junto con el "id" del input y el "for"-->
+        <input type="text" name="usuario" id="usuario" placeholder="escriba su usuario" required autocomplete="on">
+        <br>
+        <label for="email">E-mail: </label>
+        <input type="text" name="email" id="email" placeholder="escriba su email" required autocomplete="on">
+        <br>
+        <label for="password">Contraseña: </label>
+        <input type="password" name="password" id="password" placeholder="escriba su contraseña" required>
+        <br>
+        <input type="submit"><br>
+        <input type="reset"><br>
+      
+      </form>
+      <h4>Selects, Radios y Checkbox</h4>
+       <form action="peliculas.html">
+         <p>Elige un género de comics</p>
+         <select name="genero" required>
+          <option value="">Elige una opción</option>
+          <option value="accion">Acción</option>
+          <option value="horror">Horror</option>
+          <option value="romance">Romance</option>
+          <option value="comedia">Comedia</option>
+         </select>
+         <p>Elige un idioma</p><!--todos deben tener el mismo atributo name (lenguaje) para que la página nos 
+        permita seleccionar 1 solo-->
+         <input type="radio" name="lenguaje" id="radio-es" value="lenguaje-es" required><!--aplica required a los demás input
+        que tengan el mismo atributo name-->
+         <label for="lenguaje">Español</label>
+         <input type="radio" name="lenguaje" id="radio-en" value="lenguaje-en">
+         <label for="lenguaje">Inglés</label>
+         <input type="radio" name="lenguaje" id="radio-pr" value="lenguaje-pr">
+         <label for="lenguaje">Portugués</label>
+         <p>Elige los géneros de series que te interesan</p>
+         <label>
+          <input type="checkbox" name="series" value="accion">Acción
+         </label>
+         <label>
+          <input type="checkbox" name="series" value="sci-fi">Sci-fi
+         </label>
+         <label>
+          <input type="checkbox" name="series" value="comedia">Comedia
+         </label>
+         <label>
+          <input type="checkbox" name="series" value="thriller">Thriller
+         </label>
+         <br>
+         <input type="submit">
+         <input type="reset">
+       </form><br>
+      <h4>Formulario de contacto</h4>
+      <form action="https://formsubmit.co/rodrigo.gaston.munoz@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre solo acepta letras y espacios en blanco" required autocomplete="on">
+        <br>
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^
+        (\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Correo invalido" required autocomplete="on">
+        <br>
+        <textarea name="comentarios" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit">
+        <input type="reset">
+      </form>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="data-attributes">Data Attributes</h3>
+      <ul>
+        <li data-id="1" data-name="autumn">Otoño</li>
+        <li data-id="2" data-name="winter">Invierno</li>
+        <li data-id="3" data-name="spring">Primavera</li>
+        <li data-id="4" data-name="summer">Verano</li>
+      </ul>
+      <a href="index.html#inicio">Volver</a>
+    <hr>
+    <h3 id="metaetiquetas-seo">Metaetiquetas para SEO</h3>
+
+
+  <script src="assets/codigos.js"> </script>
+</body>
+
+</html>
